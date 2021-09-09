@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<title>Sakib</title>
+<link rel="shortcut icon" href="image/favicon-16x16.png" type="image/x-icon">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+</head>
+<body onload="myfunction()">
+
+    <div id="loder"></div>
+    
+<section class="sub-header">
+
+    <nav>
+        <a href="index.html"><img src="image/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="ga.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Image Gallery</h1>
+</section>
+
+<div class="container-fluid">
+    <div class="row mt-4">
+
+
+        <div class="item col-sm-6 colmd4 col-md-4 mb-3">
+            <a href="image/banner.png" class="fancybox" data-fancybox="gallery1">
+                <img src="image/banner.png" width="100%" height="100%">
+            </a>
+        </div>
+        <div class="item col-sm-6 colmd4 col-md-4 mb-3">
+            <a href="image/background.jpg" class="fancybox" data-fancybox="gallery1">
+                <img src="image/background.jpg" width="100%" height="100%">
+            </a>
+        </div>
+        <div class="item col-sm-6 colmd4 col-md-4 mb-3">
+            <a href="image/certificate.jpg" class="fancybox" data-fancybox="gallery1">
+                <img src="image/certificate.jpg" width="100%" height="100%">
+            </a>
+        </div>
+        <div class="item col-sm-6 colmd4 col-md-4 mb-3">
+            <a href="image/basketball.png" class="fancybox" data-fancybox="gallery1">
+                <img src="image/basketball.png" width="100%" height="100%">
+            </a>
+        </div>
+        <div class="item col-sm-6 colmd4 col-md-4 mb-3">
+            <a href="image/library.png" class="fancybox" data-fancybox="gallery1">
+                <img src="image/library.png" width="100%" height="100%">
+            </a>
+        </div>
+        <div class="item col-sm-6 colmd4 col-md-4 mb-3">
+            <a href="image/cafeteria.png" class="fancybox" data-fancybox="gallery1">
+                <img src="image/cafeteria.png" width="100%" height="100%">
+            </a>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam consequuntur laboriosam quidem! Expedita repellat, aliquam <br>illo dolor doloremque recusandae quod eveniet debitis iusto optio</p>
+    <div class="icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o" aria-hidden="true"></i> Sakib</p>
+</section>
+
+
+
+<!-- script -->
+<script src="https://use.fontawesome.com/1b839b2166.js"></script>
+
+<!-- ami pagol -->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+
+    var preloader = document.getElementById('loder');
+
+    function myfunction(){
+        preloader.style.display = 'none';
+    }
+
+</script>
+
+</body>
+</html>
